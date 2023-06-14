@@ -1,10 +1,11 @@
 //Добавить все значения из второго массива в первый
 'use strict'
-const MasOne = [4,1,2]
-const MasTwo = [5,6,7]
-function MasCon (arr1,arr2) {
-    return MasOne.concat(MasTwo)
+const masOne = [4,1,2];
+const masTwo = [5,6,7];
+function masPlusOneTwo (arr1,arr2) {
+    let masNew = [...arr1,...arr2];
+    return masNew;
 }
-console.log(MasOne)
-console.log(MasTwo)
-console.log(MasCon(MasOne,MasTwo))
+console.log(masPlusOneTwo(masOne,masTwo));
+
+//Перепиши через spread

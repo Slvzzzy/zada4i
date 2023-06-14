@@ -1,15 +1,16 @@
 // Реализуйте функцию, которая принимает на вход массив и число,
 // которое задает размер чанка (куска).
 'use strict'
-const Mas = [ 'a', 'b', 'c', 'd' ]
-const MasNew = []
-let Number = 3
+const mas = [ 'a', 'b', 'c', 'd' ];
+let number = 3;
 const chunkFunc = (arr, size) => {
-    let i = 0
-    while (i < Mas.length) {
-        MasNew.push(Mas.slice(i, i + size))
-        i += size
+    let i = 0;
+    const masNew = [];
+    while (i < mas.length) {
+        masNew.push(mas.slice(i, i + size));
+        i += size;
     }
-    return MasNew
+    return masNew;
 }
-console.log(chunkFunc(Mas,Number))
+console.log(chunkFunc(mas,Number));
+//почему ты создал переменную massNew не внутри функции?

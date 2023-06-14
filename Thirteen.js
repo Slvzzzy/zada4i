@@ -3,7 +3,8 @@
 const link = 'text education part 2'
 function sliceFunc(mas,num) {
         let trimmedString = mas.substring(0, num)
-        let text =''
-return text =trimmedString.concat('...')
+return trimmedString + ('...')
 }
 console.log(sliceFunc(link, 12))
+//13 задание: зачем тебе переменная text? Она не кажется тебе лишней?
+
