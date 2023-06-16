@@ -8,13 +8,14 @@ const friends = [
     { passport: '03005992', name: 'Monica Geller', age: 31, sex: 'f' },
     { passport: '03005993', name: 'Phoebe Buffay', age: 34, sex: 'f' },
 ]
+
 const filterBySexFunc = (arr) => {
     const result = [];
-    for (let i = 0, endI = arr.length - 1; i < endI; i++) {
-            if (arr[i].sex !== 'f') {
-                result.push(arr[i]);
-            }
+    arr.forEach((element,i) => {
+        if (element.sex !== 'f') {
+        result.push(arr[i]);
     }
+}  )
     return groupByAgeFunc(result)
 }
 const groupByAgeFunc = (arr) => {

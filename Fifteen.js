@@ -4,13 +4,11 @@
 'use strict'
 const array =  ['text', 'education', 'part', '2', 'exceed', 'team'];
 const inArray = (elementmas, mas) => {
-    for (let i = 0; i < mas.length; i++) {
-        if (mas[i] === elementmas) {
-            return true;
-        }
-        else {
-            return false;
-        }
+    if (mas.indexOf(elementmas) > -1) {
+        console.log(true);
+    }
+    else {
+        console.log(false);
     }
 }
 console.log(inArray('text', array));

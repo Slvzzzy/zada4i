@@ -2,18 +2,16 @@
 // иначе добавить в конец строки 'zzz'
 "use strict"
 const string= "abctestabctext";
-function stringCorrection (str) {
+const strCorrection = (str) => {
     let newString = "";
-    if (string.substring(0,3) === "abc") {
-           newString = string.replace("abc","www");
-            console.log(newString);
+    if (str.substring(0,3) === "abc") {
+           return newString = str.replace("abc","www");
         }
         else {
-           newString =  string + "zzz";
-            console.log(newString);
+           return  newString =  str + "zzz";
         }
 }
-stringCorrection(string);
+strCorrection(string);
 
 
     // if (string.indexOf("abc") === 0) {
