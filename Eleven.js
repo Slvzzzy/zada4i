@@ -9,7 +9,7 @@ function getSameElement(mas_1, mas_2) {
             if ( mas_1[i] === mas_2[j] )
                 sameElement.push( mas_1[i] );
         }
-    }
+    }dsdsssdssds
     return sameElement;
 }
 console.log(getSameElement(array1,array2));
